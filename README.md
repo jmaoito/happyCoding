@@ -1,4 +1,5 @@
 happyCoding
 ===========
 
-for coding practice
+This is a test repository for coding practice.
+
