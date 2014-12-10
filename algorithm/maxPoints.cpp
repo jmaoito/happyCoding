@@ -4,7 +4,9 @@
   Given n points on a 2D plane, find the maximum number of points 
   that lie on the same straight line.
 
-  Brute-force search along the points, 
+  Brute-force search along the points, use a hash-map to record the slopwe of 
+  two points. if the slope is same, update the count of points.
+
   time complexity O(n^2),space complexity O(n)
 
 ***********************/

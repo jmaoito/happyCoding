@@ -18,6 +18,7 @@ The formula of converting natual binary code into gray code:
 g0 = b0 , gi = bi ⊕ bi−1
 where b0 is the most significant bit of the natural binary code
 
+time complexity O(2^n), space complexity O(1)
 ********************/
 
 class Solution {
