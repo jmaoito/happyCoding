@@ -29,3 +29,21 @@ public:
         return result;
     }
 };
+
+/*********
+  Method II
+  
+  equation C(n,K) = C(n,k-1)*(n+1-k)/k
+  has to cast int to longlong int.
+
+  time complexity O(k), space complexity O(k)
+************/
+class Solution {
+public:
+    vector<int> getRow(int rowIndex) {
+        vector<int> result (rowIndex + 1, 1);
+        for (int i=1; i<rowIndex ; ++i)
+            result[i] = (long long)result[i-1]*(rowIndex+1-i)/i;
+        return result;
+    }
+};
